@@ -3,14 +3,14 @@
  
 from setuptools import setup, find_packages
  
-import ramdom_image
+import random_image
  
 
 setup(
  
     name='django_random_image',
  
-    version=ramdom_image.__version__,
+    version=random_image.__version__,
  
     packages=find_packages(),
  
