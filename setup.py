@@ -10,13 +10,13 @@ setup(
  
     name='django_random_image',
  
-    version=random_image.__version__,
+    version='1.1',
  
     packages=find_packages(),
  
     author="TonyEight",
  
-    author_email="ludoic.legendart@gmail.com",
+    author_email="ludovic.legendart@gmail.com",
  
     description="A simple tag that get you a random image URL from the specified directory under STATIC ROOT",
 
