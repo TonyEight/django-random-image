@@ -19,7 +19,7 @@ All settings are optional
 
 Default: Not defined
 
-A path to the directory from which to load the random images. Relative to MEDIA_ROOT.
+A path to the directory from which to load the random images. Relative to STATIC_ROOT.
 
 Note: Passing a path to the template tag will always override the RANDOM_IMAGE_DIR setting.
 
@@ -36,14 +36,14 @@ Usage
 Pass in a path to the image directory::
 
     {% load random_image %}
-    <img src="{{ MEDIA_URL}}{% random_image "path/to/image/dir" %}">
+    <img src="{{ STATIC_URL}}{% random_image "path/to/image/dir" %}">
 
-The path to the image directory should be relative to MEDIA_ROOT.
+The path to the image directory should be relative to STATIC_ROOT.
 
 or if you have added RANDOM_IMAGE_DIR to your settings file::
 
    {% load random_image  %}
-   <img src="{{ MEDIA_URL }}{% random_image %}">
+   <img src="{{ STATIC_URL }}{% random_image %}">
 
 
 That's it! Simple as it gets.
